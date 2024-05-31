@@ -324,12 +324,14 @@ li h4 {
 
 .right-design {
     display: flex;
+    flex: 1;
     gap: 10px;
     align-items: center;
 
 }
 
 .design-grid {
+    flex: 1;
     background: var(--grid-one);
     padding: 23px 16px;
     font-size: 14px;
@@ -425,7 +427,7 @@ li h4 {
 
 @media (max-width: 768px) {
     .container {
-        display: block;
+        display: grid;
 
     }
 
