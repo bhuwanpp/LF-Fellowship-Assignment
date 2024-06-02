@@ -11,46 +11,54 @@
     --li-color: #5531A7;
 }
 
-
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 a {
     text-decoration: none;
+    color: var(--black-first);
 }
-
 
 .container {
-    display: flex;
-    gap: 47px;
+    display: block;
 }
 
+/* left style  */
 .left {
-    /* text-align: center; */
     width: 100%;
-    max-width: 356px;
-    /* padding: 0px 48px; */
     background: var(--grid-one);
+    padding-bottom: 0;
 }
 
-.left-container {
-    padding: 0px 48px;
-}
-
-.img {
+.left-top-img {
+    width: 100%;
     padding-bottom: 32px;
 }
 
-.names h4 {
-    font-size: 30px;
-    color: #2E2E48;
+.left-container {
+    padding: 0px 32px;
+    margin-bottom: 48px;
 }
 
-.product {
+
+.names-left {
+    text-align: center;
+}
+
+.names-left h4 {
+    font-size: 32px;
+    color: var(--back-second);
+}
+
+.product-design {
     font-size: 24px;
     background: linear-gradient(to right, #A478E8, #516CF7);
     -webkit-background-clip: text;
@@ -60,41 +68,56 @@ a {
     padding-bottom: 32px;
 }
 
-.quotes {
+.quotes-withText {
     position: relative;
     color: var(--black-first);
+    width: 259px;
+    margin-left: 70px;
+    font-weight: 500;
 
 }
 
-.firstq {
+.first-quote {
     position: absolute;
-    left: -20px;
     top: 6px;
+    left: 0px;
 }
 
-.secondq {
+.second-quote {
     position: absolute;
-    right: 90px;
+    right: 20px;
     bottom: 3px;
 }
 
-.design {
+.quotes-left p {
     font-size: 18px;
 }
 
 .brenda {
     color: var(--gray-second);
-    text-align: start;
     padding-top: 4px;
     padding-bottom: 32px;
 }
 
-hr {
+.left-hr {
     margin-bottom: 32px;
+    border-top: 1px solid var(--border-color);
 }
 
+/* left-personal info  */
+.email-web {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 0px;
 
-.first {
+}
+
+.address-padding {
+    padding-left: 55px;
+}
+
+.social-design {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -107,16 +130,47 @@ hr {
     border-radius: 50%;
 }
 
-.first p,
+/* socials  */
+.social-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    column-gap: 30px;
+}
+
+.insta,
+.first-twitter {
+    order: -1;
+}
+
+.linkdin {
+    order: 0;
+}
+
+.greek {
+    padding-left: 100px;
+}
+
+
+
+.social-design p,
 .soc,
 .gray {
     color: var(--gray-second);
 
 }
 
-.first a,
-.first h5 {
+.social-design a,
+.social-design h5 {
     color: var(--black-first);
+}
+
+.social-design a {
+    font-size: 14px;
+}
+
+.social-design p {
+    font-size: 12px;
 }
 
 .first-twitter img {
@@ -132,15 +186,19 @@ hr {
     padding-bottom: 24px;
 }
 
+
+/* right  */
+
 .right {
-    padding-top: 64px;
+    padding: 0px 50px 48px 50px;
 }
 
-.right .li {
+.right-main-li {
     position: relative;
     color: var(--li-color);
     list-style-image: url(/images/extra/li-img.png);
     padding-left: 32px;
+    z-index: 20;
 }
 
 
@@ -153,32 +211,59 @@ hr {
     height: 100%
 }
 
-.first-right {
+.top-name {
+    padding-bottom: 32px;
+    font-size: 24px;
+    color: var(--back-second);
+}
+
+
+/* latest project  */
+.projects-div {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     padding-bottom: 48px;
 }
 
-.left-right {
+
+.company {
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.company-hr {
+    position: absolute;
+    left: -10.5px;
+    top: 11px;
+    border-left: 1.2px solid var(--grid-one);
+    height: 100%
+}
+
+
+/* figma  */
+
+.project-left {
     background: var(--grid-one);
     padding: 24px;
+    width: 100%;
 }
 
 .fig {
-    width: 345px;
+    width: 360px;
     display: flex;
     align-items: start;
     gap: 16px;
-    padding: 0px 40px;
 }
 
 .fig-bottom {
     padding-bottom: 16px;
 }
 
-.fig h5 {
+.fig .gray {
     padding-bottom: 4px;
+    width: 232px;
+    line-height: 18px;
 
 }
 
@@ -189,13 +274,13 @@ hr {
 
 
 
-.pow a {
+.powerful a {
     color: var(--blue-first);
     font-size: 20px;
     font-weight: 500;
 }
 
-.pow p {
+.powerful p {
     font-size: 14px;
 }
 
@@ -205,15 +290,17 @@ hr {
     border-radius: 50%;
 }
 
-li h4 {
-    padding-bottom: 32px;
-    font-size: 24px;
-    color: var(--back-second);
+
+/* experience right  */
+
+.experience-ul .company {
+    list-style: url(/assignment-1-resume/images/extra/li-black.png);
+    margin-left: 0px;
+    padding-left: 0px;
 }
 
-.second-right {
-    display: flex;
-    gap: 8px;
+.flex-experience {
+    display: block;
 }
 
 .exp-left {
@@ -251,23 +338,27 @@ li h4 {
     padding-top: 7px;
 }
 
-.exp-right {
+.exp-flex-right {
     color: var(--gray-second);
-    width: 408px;
+    width: 390px;
     font-size: 10px;
-    padding: 0px 31px;
+    padding: 0 10px;
 }
+
+/* education  */
 
 .ed-first {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    flex-grow: 1;
 }
 
 .ed-one {
     background: var(--grid-one);
-    width: 227px;
+
     padding: 16px 24px;
+    width: 100%;
 }
 
 .ed-top {
@@ -289,6 +380,9 @@ li h4 {
     font-size: 10px;
 
 }
+
+/* skills  */
+
 
 .design {
     display: flex;
@@ -316,18 +410,15 @@ li h4 {
 .left-design h5 {
     font-size: 14px;
     font-weight: 300;
-    color: var(var(--back-second));
+    color: var(--back-second);
     padding-top: 8px;
 }
 
-
-
 .right-design {
     display: flex;
+    flex-direction: column;
     flex: 1;
     gap: 10px;
-    align-items: center;
-
 }
 
 .design-grid {
@@ -342,8 +433,9 @@ li h4 {
 
 .design-grid-first {
     display: flex;
-    padding: 10px 20px;
+    padding: 10px 40px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .design-grid-first p {
@@ -375,23 +467,26 @@ li h4 {
     color: var(--blue-first);
 }
 
+
 .de-develop {
     padding-top: 20px;
 }
 
+/* tools  */
+
 .first-grid {
     display: flex;
-    gap: 8px;
     flex-wrap: wrap;
+    gap: 8px;
 
 }
 
 .figma {
     background: var(--grid-one);
     text-align: center;
-    padding: 19px 30px;
-    width: 168px;
-    height: 129px;
+    padding: 19px 20px;
+    width: 133px;
+
 }
 
 .figma h5 {
@@ -408,59 +503,153 @@ li h4 {
 
 .bottom-figma {
     width: 133px;
-    height: 113px;
     padding: 19px 26px;
-}
-
-.second-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding-top: 8px;
 }
 
 .left hr {
     color: var(--border-color);
 }
 
+/* li shadow  */
+.li-shadow {
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    background: #ffffff;
+    padding: 10px 10px;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 10;
+}
 
 
-@media (max-width: 768px) {
+@media (min-width:768px) {
     .container {
-        display: grid;
+        display: flex;
+        gap: 47px;
+    }
 
+    .email-web {
+        display: grid;
+        margin-left: -22px;
     }
 
     .left {
-        max-width: 445px;
-        align-items: center;
-    }
-
-    .right {
-        padding: 0px 30px;
-    }
-
-    .right .li {
-        padding-left: 22px;
-    }
-
-    .second-right {
-        display: block;
-    }
-
-    .exp-right {
-        padding: 10px;
-    }
-
-    .right-design {
-        display: grid;
-    }
-
-    .img {
+        max-width: 356px;
         width: 100%;
     }
 
-    .quotes p {
-        width: 202px;
+    .left-top-img {
+        width: 100%;
+        max-width: 355px;
+
     }
+
+    .left-container {
+        padding: 0px 48px;
+        margin-bottom: 0px;
+    }
+
+    .names-left {
+        text-align: start;
+    }
+
+    .first-quote {
+        position: absolute;
+        left: -20px;
+        top: 6px;
+
+    }
+
+    .social-grid {
+        display: grid;
+    }
+
+    .quotes-withText {
+        margin-left: 0;
+    }
+
+    .address-padding {
+        padding-left: 0px;
+    }
+
+    .greek {
+        padding-left: 0px;
+    }
+
+    /* right  */
+    .right {
+        padding-top: 64px;
+    }
+
+    .project-left {
+        width: 345px;
+    }
+
+    .fig {
+        width: 290px;
+    }
+
+    .experience-ul .company {
+        margin-left: 25px;
+        padding-left: 10px;
+    }
+
+    .flex-experience {
+        display: flex;
+        gap: 24px;
+
+    }
+
+    .company {
+        padding-bottom: 24px;
+    }
+
+
+
+    .ed-one {
+        background: var(--grid-one);
+        width: 227px;
+        padding: 16px 24px;
+    }
+
+    .right-design {
+        display: flex;
+        flex: 1;
+        gap: 10px;
+        align-items: center;
+        flex-direction: row;
+
+    }
+
+
+    .design-grid-first {
+        display: flex;
+        padding: 10px 20px;
+        align-items: center;
+    }
+
+    .figma {
+        background: var(--grid-one);
+        text-align: center;
+        padding: 19px 30px;
+        width: 168px;
+        height: 129px;
+    }
+
+    .bottom-figma {
+        width: 133px;
+        padding: 19px 26px;
+    }
+
+    .exp-flex-right {
+
+        width: 408px;
+        padding: 0px 31px;
+    }
+
+    .skills {
+        padding-right: 48px;
+    }
+
 }
