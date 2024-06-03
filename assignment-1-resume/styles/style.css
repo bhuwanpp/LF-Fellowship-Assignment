@@ -294,7 +294,7 @@ a {
 /* experience right  */
 
 .experience-ul .company {
-    list-style: url(/assignment-1-resume/images/extra/li-black.png);
+    list-style: url(../images/extra/li-black.png);
     margin-left: 0px;
     padding-left: 0px;
 }
