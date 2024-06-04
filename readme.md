@@ -6,6 +6,6 @@
         <h5>Roll no. 3</h5>
     </div>
 </body>
-<a href = "https://bhuwanpp.github.io/LE-FellowShip-AssignMent/" >Link for assignment table </a>
+<a href = "https://bhuwanpp.github.io/LF-Fellowship-Assignment/" >Link for assignment table </a>
 
 </html>
