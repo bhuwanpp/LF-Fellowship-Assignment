@@ -196,7 +196,7 @@ a {
 .right-main-li {
     position: relative;
     color: var(--li-color);
-    list-style-image: url(../images/extra/li-black.png);
+    list-style-image: url(images/extra/li-black.png);
     padding-left: 32px;
     z-index: 20;
 }
