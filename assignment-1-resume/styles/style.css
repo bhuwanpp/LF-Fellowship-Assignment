@@ -32,33 +32,33 @@ a {
 }
 
 /* left style  */
-.left {
+.leftSection {
     width: 100%;
     background: var(--grid-one);
     padding-bottom: 0;
 }
 
-.left-top-img {
+.leftSection--img {
     width: 100%;
     padding-bottom: 32px;
 }
 
-.left-container {
+.contaner__names {
     padding: 0px 32px;
     margin-bottom: 48px;
 }
 
 
-.names-left {
+.leftSection__leftSide {
     text-align: center;
 }
 
-.names-left h4 {
+.leftSection__leftSide h4 {
     font-size: 32px;
     color: var(--back-second);
 }
 
-.product-design {
+.leftSection__namesProduct {
     font-size: 24px;
     background: linear-gradient(to right, #A478E8, #516CF7);
     -webkit-background-clip: text;
@@ -68,7 +68,7 @@ a {
     padding-bottom: 32px;
 }
 
-.quotes-withText {
+.leftSection__quotes {
     position: relative;
     color: var(--black-first);
     width: 259px;
@@ -77,35 +77,35 @@ a {
 
 }
 
-.first-quote {
+.leftSection__quotes--first {
     position: absolute;
     top: 6px;
     left: 0px;
 }
 
-.second-quote {
+.leftSection__quotes--second {
     position: absolute;
     right: 20px;
     bottom: 3px;
 }
 
-.quotes-left p {
+.leftSection__quotes p {
     font-size: 18px;
 }
 
-.brenda {
+.quotes--name {
     color: var(--gray-second);
     padding-top: 4px;
     padding-bottom: 32px;
 }
 
-.left-hr {
+.leftSection__hr {
     margin-bottom: 32px;
     border-top: 1px solid var(--border-color);
 }
 
 /* left-personal info  */
-.email-web {
+.personal__email__web {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -113,25 +113,25 @@ a {
 
 }
 
-.address-padding {
+.personalinfo--addressPad {
     padding-left: 55px;
 }
 
-.social-design {
+.personalinfo__socialDesign {
     display: flex;
     gap: 20px;
     align-items: center;
     padding-bottom: 20px;
 }
 
-.email-img {
+.personalinfo--emailImg {
     background: var(--border-color);
     padding: 5px 5px 2px 6px;
     border-radius: 50%;
 }
 
 /* socials  */
-.social-grid {
+.social__grid {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -139,7 +139,7 @@ a {
 }
 
 .insta,
-.first-twitter {
+.personalinfo--firstTwitter {
     order: -1;
 }
 
@@ -147,42 +147,42 @@ a {
     order: 0;
 }
 
-.greek {
+.socialDesign--greek {
     padding-left: 100px;
 }
 
 
 
-.social-design p,
+.personalinfo__socialDesign p,
 .soc,
-.gray {
+.projects__gray {
     color: var(--gray-second);
 
 }
 
-.social-design a,
-.social-design h5 {
+.personalinfo__socialDesign a,
+.personalinfo__socialDesign h5 {
     color: var(--black-first);
 }
 
-.social-design a {
+.personalinfo__socialDesign a {
     font-size: 14px;
 }
 
-.social-design p {
+.personalinfo__socialDesign p {
     font-size: 12px;
 }
 
-.first-twitter img {
+.personalinfo--firstTwitter img {
     width: 60px;
     margin-left: -18px;
 }
 
-.twitter-pad {
+.socialDesign--padding {
     margin-left: -10px;
 }
 
-.soc {
+.social__p {
     padding-bottom: 24px;
 }
 
@@ -193,7 +193,7 @@ a {
     padding: 0px 50px 48px 50px;
 }
 
-.right-main-li {
+.right__mainLi {
     position: relative;
     color: var(--li-color);
     /* list-style-image: url(images/extra/li-black.png); */
@@ -204,7 +204,7 @@ a {
 
 
 
-.lineHr {
+.right__lineHr {
     position: absolute;
     left: -12px;
     top: 21px;
@@ -212,7 +212,7 @@ a {
     height: 100%
 }
 
-.top-name {
+.right__topName {
     padding-bottom: 32px;
     font-size: 24px;
     color: var(--back-second);
@@ -220,19 +220,19 @@ a {
 
 
 /* latest project  */
-.projects-div {
+.right__projects {
     display: flex;
     gap: 8px;
     padding-bottom: 48px;
 }
 
 
-.company {
+.expereince__company {
     position: relative;
     padding-bottom: 24px;
 }
 
-.company-hr {
+.expereince__company-hr {
     position: absolute;
     left: -10.5px;
     top: 11px;
@@ -243,50 +243,48 @@ a {
 
 /* figma  */
 
-
-
-.project-left {
+.projects__leftSide {
     background: var(--grid-one);
     padding: 24px;
     width: 100%;
 }
 
-.fig {
+.projects__Style {
     width: 360px;
     display: flex;
     align-items: start;
     gap: 16px;
 }
 
-.fig-bottom {
+.projectStyle--bottom {
     padding-bottom: 16px;
 }
 
-.fig .gray {
+.projects__Style .projects__gray {
     padding-bottom: 4px;
     width: 232px;
     line-height: 18px;
 
 }
 
-.black {
+.projects__black {
     color: var(--back-second);
     font-size: 16px;
 }
 
 
 
-.powerful a {
+.projects__powerful a {
     color: var(--blue-first);
     font-size: 20px;
     font-weight: 500;
 }
 
-.powerful p {
+.projects__powerful p {
     font-size: 14px;
 }
 
-.fig-image {
+.projects--images {
     background: var(--blue-bg);
     padding: 5px 6px;
     border-radius: 50%;
@@ -295,23 +293,23 @@ a {
 
 /* experience right  */
 
-.experience-ul .company {
+.right__experienceGrid .expereince__company {
     list-style: url(../images/extra/li-black.png);
     margin-left: 0px;
     padding-left: 0px;
 }
 
-.flex-experience {
+.expereince__contain {
     display: block;
 }
 
-.exp-left {
+.expereince__leftSide {
     color: var(--gray-second);
     width: 212px;
 }
 
 
-.exp-date {
+.expereince__date {
     display: flex;
     gap: 10px;
     align-items: center;
@@ -319,28 +317,28 @@ a {
     font-size: 10px;
 }
 
-.exp-date img {
+.expereince__date img {
     width: 10px;
     height: 12px;
 }
 
-.exp-logo {
+.expereince__logo {
     display: flex;
     align-items: start;
 }
 
-.exp-prod {
+.expereince--prod {
     padding-top: 8px;
     font-size: 12px;
 }
 
-.exp-prod h5 {
+.expereince--prod h5 {
     color: var(--back-second);
     font-size: 14px;
     padding-top: 7px;
 }
 
-.exp-flex-right {
+.expereince--containRight {
     color: var(--gray-second);
     width: 390px;
     font-size: 10px;
@@ -351,14 +349,14 @@ a {
 
 /* education  */
 
-.ed-first {
+.edcutaion__fistContain {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     flex-grow: 1;
 }
 
-.ed-one {
+.ed__one {
     background: var(--grid-one);
 
     padding: 16px 24px;
@@ -366,7 +364,7 @@ a {
     flex: 1;
 }
 
-.ed-top {
+.ed__top {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -374,19 +372,19 @@ a {
     font-size: 12px;
 }
 
-.ed-one h5 {
+.ed__one h5 {
     color: var(--back-second);
     padding-bottom: 2px;
     font-size: 14px;
 }
 
-.ed-one p {
+.ed__one p {
     color: var(--gray-second);
     font-size: 10px;
 
 }
 
-/* skills  */
+/* right__skills  */
 
 
 .design {
@@ -394,7 +392,7 @@ a {
 
 }
 
-.left-design {
+.design__left {
     padding-right: 75px;
 }
 
@@ -402,7 +400,7 @@ a {
     padding-right: 40px;
 }
 
-.left-design img {
+.design__left img {
     background: var(--purple-bg);
     padding: 5px 6px;
     border-radius: 50%;
@@ -412,21 +410,21 @@ a {
     padding: 8px 5px;
 }
 
-.left-design h5 {
+.design__left h5 {
     font-size: 14px;
     font-weight: 300;
     color: var(--back-second);
     padding-top: 8px;
 }
 
-.right-design {
+.design__right {
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 10px;
 }
 
-.design-grid {
+.design--grid {
     flex: 1;
     background: var(--grid-one);
     padding: 23px 16px;
@@ -436,26 +434,26 @@ a {
 
 }
 
-.design-grid-first {
+.design--grid--first {
     display: flex;
     padding: 10px 40px;
     align-items: center;
     justify-content: space-between;
 }
 
-.design-grid-first p {
+.design--grid--first p {
     text-wrap: wrap;
 
 }
 
-.line-design {
+.design__line {
     border-left: 1.5px solid var(--border-color);
     height: 30px;
     margin: 0px 10px;
     color: var(--border-color);
 }
 
-.js-span {
+.design--jsSpan {
     display: block;
     border-top: 2px solid var(--border-color);
     padding-left: 5px;
@@ -464,29 +462,29 @@ a {
 
 }
 
-.design-grid ul li {
+.design--grid ul li {
     list-style: initial;
 }
 
-.development {
+.design--development {
     color: var(--blue-first);
 }
 
 
-.de-develop {
+.design--develop {
     padding-top: 20px;
 }
 
 /* tools  */
 
-.first-grid {
+.tools__firstGrid {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 
 }
 
-.figma {
+.tools__imgs {
     background: var(--grid-one);
     text-align: center;
     padding: 19px 20px;
@@ -494,19 +492,19 @@ a {
 
 }
 
-.figma h5 {
+.tools__imgs h5 {
     font-size: 14px;
     color: var(--back-second);
     padding-bottom: 2px;
     padding-top: 8px;
 }
 
-.figma p {
+.tools__imgs p {
     font-size: 10px;
     color: var(--gray-second);
 }
 
-.bottom-figma {
+.tools--bottom {
     width: 133px;
     padding: 19px 26px;
 }
@@ -516,7 +514,7 @@ a {
 }
 
 /* li shadow  */
-.li-shadow {
+.right__liShadow {
     position: absolute;
     left: -25px;
     top: 3px;
@@ -534,51 +532,51 @@ a {
         gap: 47px;
     }
 
-    .email-web {
+    .personal__email__web {
         display: grid;
         margin-left: -22px;
     }
 
-    .left {
+    .leftSection {
         max-width: 356px;
         width: 100%;
     }
 
-    .left-top-img {
+    .leftSection--img {
         width: 100%;
         max-width: 355px;
 
     }
 
-    .left-container {
+    .contaner__names {
         padding: 0px 48px;
         margin-bottom: 0px;
     }
 
-    .names-left {
+    .leftSection__leftSide {
         text-align: start;
     }
 
-    .first-quote {
+    .leftSection__quotes--first {
         position: absolute;
         left: -20px;
         top: 6px;
 
     }
 
-    .social-grid {
+    .social__grid {
         display: grid;
     }
 
-    .quotes-withText {
+    .leftSection__quotes {
         margin-left: 0;
     }
 
-    .address-padding {
+    .personalinfo--addressPad {
         padding-left: 0px;
     }
 
-    .greek {
+    .socialDesign--greek {
         padding-left: 0px;
     }
 
@@ -587,42 +585,40 @@ a {
         padding-top: 64px;
     }
 
-    .project-left {
-
+    .projects__leftSide {
         flex-shrink: 1;
         display: flex;
         flex-direction: column;
-
     }
 
-    .fig {
+    .projects__Style {
         width: 290px;
     }
 
-    .experience-ul .company {
+    .right__experienceGrid .expereince__company {
         margin-left: 25px;
         padding-left: 10px;
     }
 
-    .flex-experience {
+    .expereince__contain {
         display: flex;
         gap: 24px;
 
     }
 
-    .company {
+    .expereince__company {
         padding-bottom: 24px;
     }
 
 
 
-    .ed-one {
+    .ed__one {
         background: var(--grid-one);
         width: 227px;
         padding: 16px 24px;
     }
 
-    .right-design {
+    .design__right {
         display: flex;
         flex: 1;
         gap: 10px;
@@ -632,13 +628,13 @@ a {
     }
 
 
-    .design-grid-first {
+    .design--grid--first {
         display: flex;
         padding: 10px 20px;
         align-items: center;
     }
 
-    .figma {
+    .tools__imgs {
         background: var(--grid-one);
         text-align: center;
         padding: 19px 30px;
@@ -646,18 +642,18 @@ a {
         height: 129px;
     }
 
-    .bottom-figma {
+    .tools--bottom {
         width: 133px;
         padding: 19px 26px;
     }
 
-    .exp-flex-right {
+    .expereince--containRight {
 
         width: 408px;
         padding: 0px 31px;
     }
 
-    .skills {
+    .right__skills {
         padding-right: 48px;
     }
 
